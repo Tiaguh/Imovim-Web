@@ -8,7 +8,7 @@ import { Container, Img, TextContainer, Text, ButtonContainer, LoginButton, Regi
 export default function HomePage() {
     return (
         <Container>
-            <Img src={Logo} alt=""/>
+            <Img src={Logo} alt="" />
 
             <TextContainer>
 
@@ -32,9 +32,11 @@ export default function HomePage() {
                     </LoginButton>
                 </Link>
 
-                <RegisterButton>
-                    Cadastre-se
-                </RegisterButton>
+                <Link to="/register">
+                    <RegisterButton>
+                        Cadastre-se
+                    </RegisterButton>
+                </Link>
 
             </ButtonContainer>
 
