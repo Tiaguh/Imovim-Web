@@ -1,5 +1,7 @@
 import React from 'react';
-import Logo from './img/logo.PNG'
+import Logo from './img/logo.PNG';
+
+import { Link } from 'react-router-dom';
 
 import { Container, LogoContainer, Img, LoginContainer, TitleContainer, Title, Form, Input, ButtonContainer, Button, RegisterContainer, Text, Register } from './Style.js'
 
@@ -31,10 +33,12 @@ export default function Login() {
 
                 </Form>
 
-                {/* <p>Esqueci minha senha</p> */}
-
                 <ButtonContainer>
-                    <Button>Entrar</Button>
+
+                    <Link to="/feed">
+                        <Button>Entrar</Button>
+                    </Link>
+
                 </ButtonContainer>
 
                 <RegisterContainer>
