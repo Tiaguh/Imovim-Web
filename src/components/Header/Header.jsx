@@ -3,13 +3,21 @@ import React, { useState } from "react"
 import { BiMenu } from "react-icons/bi";
 import { BsFillChatFill } from "react-icons/bs";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { RiCloseLine } from "react-icons/ri";
 
 import Logo from "./img/logo.PNG"
 
-import { Container, HeaderContainer, StartContainer, CenterContainer, Icon, EndContainer, Drawer, DrawerItem } from "./Style.js"
+import 'react-modern-drawer/dist/index.css'
+
+import Drawer from 'react-modern-drawer'
+
+import { Container, HeaderContainer, StartContainer, CenterContainer, Icon, EndContainer, DrawerContainer, CloseDrawer } from "./Style.js"
 
 export default function Header() {
-  const [activite, setActivite] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+  }
 
   return (
     <Container>
@@ -18,7 +26,7 @@ export default function Header() {
 
         <StartContainer>
           <BiMenu
-            onClick={()=> setActivite(!activite)}
+            onClick={() => setIsOpen(true)}
             size={50}
             color="#F8670E"
             style={{ cursor: "pointer" }}
@@ -46,17 +54,30 @@ export default function Header() {
       </HeaderContainer>
 
       {
-        activite ? (
-          <Drawer>
+        isOpen ? (
+          <Drawer
+            open={isOpen}
+            onClose={toggleDrawer}
+            direction='left'
+            className='bla bla bla'
+            enableOverlay={false}
+          >
+            <DrawerContainer>
 
-            <DrawerItem>
+              <CloseDrawer>
+                <RiCloseLine
+                  onClick={() => setIsOpen(false)}
+                  size={50}
+                  color="#FFF"
+                  style={{ cursor: "pointer" }}
+                />
+              </CloseDrawer>
 
-            </DrawerItem>
-
+            </DrawerContainer>
           </Drawer>
         ) : (
           <div>
-            
+
           </div>
         )
       }
