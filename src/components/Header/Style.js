@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+export const Container = styled.div`
+
+`;
+
 export const HeaderContainer = styled.div`
     width: 100vw;
     height: 10vh;
@@ -7,11 +11,11 @@ export const HeaderContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    padding-inline: 15px; 
+    padding-inline: 25px; 
 
-    background-color: #A512BD
+    background-color: #A512BD;
 `;
 
 export const Icon = styled.img`
@@ -22,9 +26,6 @@ export const StartContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
-    position: absolute;
-    left: 15px;
 `;
 
 export const CenterContainer = styled.div`
@@ -39,7 +40,21 @@ export const EndContainer = styled.div`
     justify-content: center;
 
     gap: 10px;
+`;
 
-    position: absolute;
-    right: 15px;
+export const Drawer = styled.div`
+    width: 250px;
+    height: 100vh;
+    
+    background-color: #F8670E;
+
+    position: fixed;
+`;
+
+export const DrawerItem = styled.div`
+    width: 100%;
+    height: 30px
+
+    
+
 `;

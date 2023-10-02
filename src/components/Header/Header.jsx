@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import { BiMenu } from "react-icons/bi";
 import { BsFillChatFill } from "react-icons/bs";
@@ -6,38 +6,61 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 
 import Logo from "./img/logo.PNG"
 
-import { HeaderContainer, StartContainer, CenterContainer, Icon, EndContainer } from "./Style.js"
+import { Container, HeaderContainer, StartContainer, CenterContainer, Icon, EndContainer, Drawer, DrawerItem } from "./Style.js"
 
 export default function Header() {
+  const [activite, setActivite] = useState(false)
+
   return (
-    <HeaderContainer>
+    <Container>
 
-      <StartContainer>
-        <BiMenu
-          size={50}
-          color="#F8670E"
-          style={{ cursor: "pointer" }}
-        />
-      </StartContainer>
+      <HeaderContainer>
 
-      <CenterContainer>
-        <Icon src={Logo} alt="logo" />
-      </CenterContainer>
+        <StartContainer>
+          <BiMenu
+            onClick={()=> setActivite(!activite)}
+            size={50}
+            color="#F8670E"
+            style={{ cursor: "pointer" }}
+          />
+        </StartContainer>
 
-      <EndContainer>
-        <BsFillChatFill
-          size={30}
-          color="#F8670E"
-          style={{ cursor: "pointer" }}
-        />
+        <CenterContainer>
+          <Icon src={Logo} alt="logo" />
+        </CenterContainer>
 
-        <FaMagnifyingGlass
-          size={30}
-          color="#F8670E"
-          style={{ cursor: "pointer" }}
-        />
-      </EndContainer>
+        <EndContainer>
+          <BsFillChatFill
+            size={30}
+            color="#F8670E"
+            style={{ cursor: "pointer" }}
+          />
 
-    </HeaderContainer>
+          <FaMagnifyingGlass
+            size={30}
+            color="#F8670E"
+            style={{ cursor: "pointer" }}
+          />
+        </EndContainer>
+
+      </HeaderContainer>
+
+      {
+        activite ? (
+          <Drawer>
+
+            <DrawerItem>
+
+            </DrawerItem>
+
+          </Drawer>
+        ) : (
+          <div>
+            
+          </div>
+        )
+      }
+
+    </Container>
   )
 }
