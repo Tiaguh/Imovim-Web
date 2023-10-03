@@ -41,22 +41,3 @@ export const EndContainer = styled.div`
 
     gap: 10px;
 `;
-
-export const DrawerContainer = styled.div`
-    width: 250px;
-    height: 100vh;
-    
-    background-color: #F8670E;
-
-    position: fixed;
-`;
-
-export const CloseDrawer = styled.div`
-    width: 100%;
-    height: 10vh;    
-
-    display: flex;
-    align-items: center;
-
-    padding-inline: 25px; 
-`;

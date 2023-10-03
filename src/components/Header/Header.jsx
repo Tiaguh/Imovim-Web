@@ -3,7 +3,8 @@ import React, { useState } from "react"
 import { BiMenu } from "react-icons/bi";
 import { BsFillChatFill } from "react-icons/bs";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { RiCloseLine } from "react-icons/ri";
+
+import DrawerContent from '../DrawerContent/DrawerContent'
 
 import Logo from "./img/logo.PNG"
 
@@ -11,7 +12,7 @@ import 'react-modern-drawer/dist/index.css'
 
 import Drawer from 'react-modern-drawer'
 
-import { Container, HeaderContainer, StartContainer, CenterContainer, Icon, EndContainer, DrawerContainer, CloseDrawer } from "./Style.js"
+import { Container, HeaderContainer, StartContainer, CenterContainer, Icon, EndContainer } from "./Style.js"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -59,21 +60,9 @@ export default function Header() {
             open={isOpen}
             onClose={toggleDrawer}
             direction='left'
-            className='bla bla bla'
             enableOverlay={false}
           >
-            <DrawerContainer>
-
-              <CloseDrawer>
-                <RiCloseLine
-                  onClick={() => setIsOpen(false)}
-                  size={50}
-                  color="#FFF"
-                  style={{ cursor: "pointer" }}
-                />
-              </CloseDrawer>
-
-            </DrawerContainer>
+            <DrawerContent setIsOpen={setIsOpen} />
           </Drawer>
         ) : (
           <div>
