@@ -27,5 +27,18 @@ export const TopBar = styled.div`
 
     border-radius: 30px;
 
-    padding: 15px
+    padding: 15px;
+
+    margin-bottom: 5px
 `;
+
+export const FeedContainer = styled.div`
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+`

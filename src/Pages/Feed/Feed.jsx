@@ -1,10 +1,11 @@
 import React from "react";
 
 import Header from "../../components/Header/Header";
+import Post from "../../components/Post/Post";
 
 import { BsFillCalendarFill, BsCameraFill, BsFillPencilFill } from "react-icons/bs";
 
-import { Container, TopBar, TopBarContainer } from "./Style.js"
+import { Container, TopBar, TopBarContainer, FeedContainer } from "./Style.js"
 
 export default function Feed() {
   return (
@@ -34,6 +35,15 @@ export default function Feed() {
 
         </TopBar>
       </TopBarContainer>
+
+      <FeedContainer>
+
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+
+      </FeedContainer>
 
     </Container>
   )
