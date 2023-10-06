@@ -79,7 +79,7 @@ export const Navigation = styled.button`
 export const TextNavigation = styled.div`
     font-family: sans-serif;
     font-size: 18px;
-    color: #FFF
+    color: #FFF;
 `;
 
 export const ExitContainer = styled.div`

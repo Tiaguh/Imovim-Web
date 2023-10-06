@@ -7,6 +7,7 @@ import { RiCloseLine } from "react-icons/ri";
 import { AiFillHome, AiFillCalendar } from "react-icons/ai";
 
 import { DrawerContainer, CloseDrawer, UserContainer, UserPhoto, UserName, NavigationContainer, Navigation, TextNavigation, ExitContainer, ExitButton } from "./Style.js"
+import { Link } from 'react-router-dom';
 
 export default function DrawerContent({ setIsOpen }) {
     return (
@@ -40,9 +41,14 @@ export default function DrawerContent({ setIsOpen }) {
                         style={{ cursor: "pointer" }}
                     />
 
-                    <TextNavigation>
-                        Página inicial
-                    </TextNavigation>
+                    <Link
+                        style={{ textDecoration: "none" }}
+                        to="/feed"
+                    >
+                        <TextNavigation>
+                            Página inicial
+                        </TextNavigation>
+                    </Link>
 
                 </Navigation>
 
@@ -54,9 +60,14 @@ export default function DrawerContent({ setIsOpen }) {
                         style={{ cursor: "pointer" }}
                     />
 
-                    <TextNavigation>
-                        Meu perfil
-                    </TextNavigation>
+                    <Link
+                        style={{ textDecoration: "none" }}
+                        to="/my-profile"
+                    >
+                        <TextNavigation>
+                            Meu perfil
+                        </TextNavigation>
+                    </Link>
 
                 </Navigation>
 
