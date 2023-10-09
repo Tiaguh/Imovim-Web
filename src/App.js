@@ -7,8 +7,10 @@ import Register from "./Pages/Register/Register";
 
 import Feed from "./Pages/Feed/Feed";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MyProfile from "./Pages/MyProfile/MyProfile";
+import SeeMore from "./Pages/SeeMore/SeeMore";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
@@ -20,6 +22,7 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/my-profile" element={<MyProfile /> } />
+        <Route path="/see-more" element={<SeeMore /> } />
 
       </Routes>
     </Router>

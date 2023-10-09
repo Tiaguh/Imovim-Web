@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
+import { Link } from 'react-router-dom';
 
 import { BsFillCameraFill } from 'react-icons/bs';
 import { BiSolidPencil } from 'react-icons/bi';
@@ -15,7 +17,7 @@ export default function MyProfile() {
 
     return (
         <Container>
-            <Header />Option
+            <Header />
 
             <WallPaper />
 
@@ -54,7 +56,7 @@ export default function MyProfile() {
 
                 {
                     visible ? (
-                        <SeeMoreActivity onClick={()=> setVisible(false)} >
+                        <SeeMoreActivity>
 
                             <Options>
 
@@ -65,20 +67,22 @@ export default function MyProfile() {
 
                                 <Line />
 
-                                <Option>
-                                    <IoAddOutline style={{ cursor: "pointer" }} color="#FFF" size={35} />
-                                    <OptionText>Editar Tags</OptionText>
-                                </Option>
+                                <Link style={{textDecoration: "none"}} to="/see-more">
+                                    <Option>
+                                        <IoAddOutline style={{ cursor: "pointer" }} color="#FFF" size={35} />
+                                        <OptionText>Ver mais</OptionText>
+                                    </Option>
+                                </Link>
 
                             </Options>
 
-                            <CloseSeeMore>
+                            <CloseSeeMore onClick={() => setVisible(false)}>
                                 <AiOutlineClose style={{ cursor: "pointer" }} color="#FFF" size={30} />
                             </CloseSeeMore>
 
                         </SeeMoreActivity>
                     ) : (
-                        <SeeMoreDesable onClick={()=> setVisible(true)} >
+                        <SeeMoreDesable onClick={() => setVisible(true)} >
                             <IoEllipsisHorizontal color="#FFF" size={30} />
                         </SeeMoreDesable>
                     )
