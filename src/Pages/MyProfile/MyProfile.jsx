@@ -60,14 +60,16 @@ export default function MyProfile() {
 
                             <Options>
 
-                                <Option>
-                                    <BiSolidPencil style={{ cursor: "pointer" }} color="#FFF" size={30} />
-                                    <OptionText>Editar Tags</OptionText>
-                                </Option>
+                                <Link style={{ textDecoration: "none" }} to="/tags">
+                                    <Option>
+                                        <BiSolidPencil style={{ cursor: "pointer" }} color="#FFF" size={30} />
+                                        <OptionText>Editar Tags</OptionText>
+                                    </Option>
+                                </Link>
 
                                 <Line />
 
-                                <Link style={{textDecoration: "none"}} to="/see-more">
+                                <Link style={{ textDecoration: "none" }} to="/see-more">
                                     <Option>
                                         <IoAddOutline style={{ cursor: "pointer" }} color="#FFF" size={35} />
                                         <OptionText>Ver mais</OptionText>

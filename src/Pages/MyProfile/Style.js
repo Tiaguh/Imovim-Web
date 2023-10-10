@@ -171,7 +171,7 @@ export const SeeMoreActivity = styled.div`
     background-color: #F8670E;
 
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
 
     cursor: pointer;
 

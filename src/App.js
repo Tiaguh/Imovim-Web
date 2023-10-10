@@ -9,6 +9,7 @@ import Feed from "./Pages/Feed/Feed";
 
 import MyProfile from "./Pages/MyProfile/MyProfile";
 import SeeMore from "./Pages/SeeMore/SeeMore";
+import Tags from "./Pages/Tags/Tags";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/feed" element={<Feed />} />
         <Route path="/my-profile" element={<MyProfile /> } />
         <Route path="/see-more" element={<SeeMore /> } />
+        <Route path="/tags" element={<Tags /> } />
 
       </Routes>
     </Router>
