@@ -13,6 +13,8 @@ export const SeeMoreContainer = styled.div`
     gap: 30px;
 
     padding-inline: 25px;
+
+    margin-bottom: 20px
 `;
 
 export const TitleContainer = styled.div`

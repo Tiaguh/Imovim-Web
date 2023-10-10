@@ -1,4 +1,6 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
+
+import { Link } from 'react-router-dom'
 
 import { BiMenu } from "react-icons/bi";
 import { BsFillChatFill } from "react-icons/bs";
@@ -39,11 +41,17 @@ export default function Header() {
         </CenterContainer>
 
         <EndContainer>
-          <BsFillChatFill
-            size={30}
-            color="#F8670E"
-            style={{ cursor: "pointer" }}
-          />
+
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/messages"
+          >
+            <BsFillChatFill
+              size={30}
+              color="#F8670E"
+              style={{ cursor: "pointer" }}
+            />
+          </Link>
 
           <FaMagnifyingGlass
             size={30}

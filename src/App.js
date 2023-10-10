@@ -6,6 +6,7 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 
 import Feed from "./Pages/Feed/Feed";
+import Message from "./Pages/Message/Message";
 
 import MyProfile from "./Pages/MyProfile/MyProfile";
 import SeeMore from "./Pages/SeeMore/SeeMore";
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/my-profile" element={<MyProfile /> } />
         <Route path="/see-more" element={<SeeMore /> } />
         <Route path="/tags" element={<Tags /> } />
+        <Route path="/messages" element={<Message /> } />
 
       </Routes>
     </Router>

@@ -93,7 +93,9 @@ export default function MyProfile() {
             </TagsContainer>
 
             <ProfileFeed>
-                Não há nenhuma publicação aqui
+                <h1 style={{fontFamily: "sans-serif", fontSize: 20}}>
+                    Não há nenhuma publicação aqui
+                </h1>
             </ProfileFeed>
 
         </Container>
