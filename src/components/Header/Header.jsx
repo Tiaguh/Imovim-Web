@@ -53,11 +53,16 @@ export default function Header() {
             />
           </Link>
 
-          <FaMagnifyingGlass
-            size={30}
-            color="#F8670E"
-            style={{ cursor: "pointer" }}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/search"
+          >
+            <FaMagnifyingGlass
+              size={28}
+              color="#F8670E"
+              style={{ cursor: "pointer" }}
+            />
+          </Link>
         </EndContainer>
 
       </HeaderContainer>

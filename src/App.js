@@ -7,6 +7,7 @@ import Register from "./Pages/Register/Register";
 
 import Feed from "./Pages/Feed/Feed";
 import Message from "./Pages/Message/Message";
+import Search from "./Pages/Search/Search";
 
 import MyProfile from "./Pages/MyProfile/MyProfile";
 import SeeMore from "./Pages/SeeMore/SeeMore";
@@ -27,7 +28,7 @@ export default function App() {
         <Route path="/see-more" element={<SeeMore /> } />
         <Route path="/tags" element={<Tags /> } />
         <Route path="/messages" element={<Message /> } />
-
+        <Route path="/search" element={<Search /> } />
       </Routes>
     </Router>
   )

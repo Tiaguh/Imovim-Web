@@ -1,23 +1,28 @@
 import React from 'react';
 
-import { BsFillChatFill } from 'react-icons/bs'
+import { HiMiniMagnifyingGlass } from 'react-icons/hi2'
 
 import Header from '../../components/Header/Header'
 
-import { Container, LogoContainer, Logo, LogoText } from './Style.js'
+import { Container, SearchContainer, IconContainer, InputContainer, Input } from './Style.js'
 
 export default function Search() {
     return (
         <Container>
             <Header />
 
-            <LogoContainer>
-                <Logo>
-                    <BsFillChatFill color="#A512BD" size={25} />
+            <InputContainer>
 
-                    <LogoText>Chat</LogoText>
-                </Logo>
-            </LogoContainer>
+                <SearchContainer>
+
+                    <IconContainer>
+                        <HiMiniMagnifyingGlass color="#F8670E" size={25} />
+                    </IconContainer>
+
+                    <Input placeholder='Pesquise por amigos...' />
+                </SearchContainer>
+
+            </InputContainer>
 
         </Container>
     )
