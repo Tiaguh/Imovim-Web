@@ -1,6 +1,6 @@
 import "./App.css"
 
-import HomePage from "./Pages/HomePage/HomePage.jsx";
+import HomePage from "./Pages/HomePage/HomePage";
 
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
@@ -8,6 +8,8 @@ import Register from "./Pages/Register/Register";
 import Feed from "./Pages/Feed/Feed";
 import Message from "./Pages/Message/Message";
 import Search from "./Pages/Search/Search";
+
+import Events from "./Pages/Events/Events";
 
 import MyProfile from "./Pages/MyProfile/MyProfile";
 import SeeMore from "./Pages/SeeMore/SeeMore";
@@ -29,6 +31,7 @@ export default function App() {
         <Route path="/tags" element={<Tags /> } />
         <Route path="/messages" element={<Message /> } />
         <Route path="/search" element={<Search /> } />
+        <Route path="/events" element={<Events /> } />
       </Routes>
     </Router>
   )

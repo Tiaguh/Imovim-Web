@@ -79,9 +79,14 @@ export default function DrawerContent({ setIsOpen }) {
                         style={{ cursor: "pointer" }}
                     />
 
-                    <TextNavigation>
-                        Eventos
-                    </TextNavigation>
+                    <Link
+                        style={{ textDecoration: "none" }}
+                        to="/events"
+                    >
+                        <TextNavigation>
+                            Eventos
+                        </TextNavigation>
+                    </Link>
 
                 </Navigation>
 
