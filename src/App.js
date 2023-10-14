@@ -9,6 +9,7 @@ import Feed from "./Pages/Feed/Feed";
 import Message from "./Pages/Message/Message";
 import Search from "./Pages/Search/Search";
 
+import CreatePost from "./Pages/CreatePost/CreatePost";
 import Events from "./Pages/Events/Events";
 
 import MyProfile from "./Pages/MyProfile/MyProfile";
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/messages" element={<Message /> } />
         <Route path="/search" element={<Search /> } />
         <Route path="/events" element={<Events /> } />
+        <Route path="/create-post" element={<CreatePost /> } />
       </Routes>
     </Router>
   )

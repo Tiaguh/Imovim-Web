@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import Header from "../../components/Header/Header";
 import Post from "../../components/Post/Post";
 
@@ -27,11 +29,16 @@ export default function Feed() {
             size={30}
           />
 
-          <BsFillPencilFill
-            style={{ cursor: "pointer" }}
-            color="#FFF"
-            size={25}
-          />
+          <Link 
+            style={{textDecoration: 'none'}}
+            to='/create-post'
+          >
+            <BsFillPencilFill
+              style={{ cursor: "pointer" }}
+              color="#FFF"
+              size={25}
+            />
+          </Link>
 
         </TopBar>
       </TopBarContainer>
