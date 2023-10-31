@@ -98,9 +98,14 @@ export default function DrawerContent({ setIsOpen }) {
                         style={{ cursor: "pointer" }}
                     />
 
-                    <TextNavigation>
-                        Criar Post
-                    </TextNavigation>
+                    <Link
+                        to="/create-post"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <TextNavigation>
+                            Criar Post
+                        </TextNavigation>
+                    </Link>
 
                 </Navigation>
 
@@ -112,9 +117,14 @@ export default function DrawerContent({ setIsOpen }) {
                         style={{ cursor: "pointer" }}
                     />
 
-                    <TextNavigation>
-                        Notificações
-                    </TextNavigation>
+                    <Link
+                        to="/notifications"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <TextNavigation>
+                            Notificações
+                        </TextNavigation>
+                    </Link>
 
                 </Navigation>
 
