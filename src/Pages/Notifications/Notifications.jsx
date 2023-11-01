@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 import Header from '../../components/Header/Header';
 
-import { Container, NotificationsContainer, TitleContainer, Title, OptionsNotifications, Option } from './Style'
+import { Container, NotificationsContainer, TitleContainer, Title, OptionsNotifications, Option, TypeNotifications } from './Style'
 
-export default function Notifications(props) {
+export default function Notifications() {
     const [activite, setActivite] = useState(false)
 
     return (
@@ -29,8 +29,26 @@ export default function Notifications(props) {
 
                 </OptionsNotifications>
 
+                <TypeNotifications>
+
+                    {
+                        activite ? (
+                            <div>
+                                <h1>requests</h1>
+                            </div>
+                        ) : (
+                            <div>
+                                <h1>publics</h1>
+                            </div>
+                        )
+                    }
+
+
+
+                </TypeNotifications>
+
             </NotificationsContainer>
 
-        </Container>
+        </Container >
     )
 }

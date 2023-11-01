@@ -46,8 +46,15 @@ export const Option = styled.button`
     border-radius: 25px;
 
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     color: #000;
 
     background-color: ${props => props.active ? '#F1F1F1' : '#E1E1E1'};
-`
+`;
+
+export const TypeNotifications = styled.div`
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+`;
