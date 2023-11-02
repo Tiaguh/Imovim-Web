@@ -50,11 +50,12 @@ export const Option = styled.button`
     color: #000;
 
     background-color: ${props => props.active ? '#F1F1F1' : '#E1E1E1'};
+
+    cursor: pointer;
 `;
 
 export const TypeNotifications = styled.div`
     width: 100%;
 
-    display: flex;
-    justify-content: center;
+    padding-inline: 30px
 `;

@@ -4,6 +4,8 @@ import Header from '../../components/Header/Header';
 
 import { Container, NotificationsContainer, TitleContainer, Title, OptionsNotifications, Option, TypeNotifications } from './Style'
 
+import Followed from '../../components/PublicationNotification/PublicationNotification';
+
 export default function Notifications() {
     const [activite, setActivite] = useState(false)
 
@@ -38,7 +40,7 @@ export default function Notifications() {
                             </div>
                         ) : (
                             <div>
-                                <h1>publics</h1>
+                                <Followed />
                             </div>
                         )
                     }
