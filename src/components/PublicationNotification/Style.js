@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 120px;
+    height: 125px;
 
     display: flex;
     align-items: center;
@@ -28,6 +28,11 @@ export const PhotoContainer = styled.div`
     margin-inline: 25px
 `;
 
+export const UserDescribe = styled.div`
+    display: flex;
+    gap: 5px;
+`
+
 export const UserName = styled.h1`
     font-size: 25px;
     font-family: sans-serif;
@@ -37,4 +42,4 @@ export const Action = styled.h1`
     font-size: 25px;
     font-family: sans-serif;
     font-weight: normal;
-`
+`;

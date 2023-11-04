@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header';
 import { Container, NotificationsContainer, TitleContainer, Title, OptionsNotifications, Option, TypeNotifications } from './Style'
 
 import Followed from '../../components/PublicationNotification/PublicationNotification';
+import Solicitation from '../../components/SolicitationNotification/SolicitationNotification';
 
 export default function Notifications() {
     const [activite, setActivite] = useState(false)
@@ -36,7 +37,7 @@ export default function Notifications() {
                     {
                         activite ? (
                             <div>
-                                <h1>requests</h1>
+                                <Solicitation />
                             </div>
                         ) : (
                             <div>
