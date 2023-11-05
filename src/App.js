@@ -18,6 +18,7 @@ import Tags from "./Pages/Tags/Tags";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Notifications from "./Pages/Notifications/Notifications";
+import CreateEvent from "./Pages/CreateEvent/CreateEvent";
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/search" element={<Search /> } />
         <Route path="/events" element={<Events /> } />
         <Route path="/create-post" element={<CreatePost /> } />
+        <Route path="/create-event" element={<CreateEvent /> } />
         <Route path="/notifications" element={<Notifications /> } />
       </Routes>
     </Router>

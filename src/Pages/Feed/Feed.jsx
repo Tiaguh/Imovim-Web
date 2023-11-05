@@ -15,13 +15,19 @@ export default function Feed() {
       <Header />
 
       <TopBarContainer>
+
         <TopBar>
 
-          <BsFillCalendarFill
-            style={{ cursor: "pointer" }}
-            color="#FFF"
-            size={23}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/create-event"
+          >
+            <BsFillCalendarFill
+              style={{ cursor: "pointer" }}
+              color="#FFF"
+              size={23}
+            />
+          </Link>
 
           <BsCameraFill
             style={{ cursor: "pointer" }}
@@ -29,8 +35,8 @@ export default function Feed() {
             size={30}
           />
 
-          <Link 
-            style={{textDecoration: 'none'}}
+          <Link
+            style={{ textDecoration: 'none' }}
             to='/create-post'
           >
             <BsFillPencilFill
@@ -41,6 +47,7 @@ export default function Feed() {
           </Link>
 
         </TopBar>
+
       </TopBarContainer>
 
       <FeedContainer>

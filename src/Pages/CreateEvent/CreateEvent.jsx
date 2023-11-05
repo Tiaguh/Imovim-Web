@@ -23,30 +23,11 @@ export default function CreateEvent() {
                     <UserName>Teste</UserName>
                 </UserInfo>
 
-                <PostContainer>
-                    <PostContentContainer>
-
-                        <PostContent>
-                            <HiPhoto color="#FFF" size={100} />
-                        </PostContent>
-
-                        <PostDescribe
-                            onChange={(e) => setDescribe(e.target.value)}
-                            placeholder='Digite uma legenda...'
-                            maxLength={100}
-                        />
-
-                        <DescribeLengthContainer>
-                            <DescribeLength>
-                                {describe.length} /100
-                            </DescribeLength>
-                        </DescribeLengthContainer>
-
-                    <Button>Criar post</Button>
-                    
-                    </PostContentContainer>
-
-                </PostContainer>
+                <PostDescribe
+                    onChange={(e) => setDescribe(e.target.value)}
+                    placeholder='Digite uma legenda...'
+                    maxLength={100}
+                />
 
             </CreatePostContainer>
 
