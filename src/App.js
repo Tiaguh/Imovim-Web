@@ -16,6 +16,8 @@ import MyProfile from "./Pages/MyProfile/MyProfile";
 import SeeMore from "./Pages/SeeMore/SeeMore";
 import Tags from "./Pages/Tags/Tags";
 
+import Friends from "./Pages/Friends/Friends"
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Notifications from "./Pages/Notifications/Notifications";
 import CreateEvent from "./Pages/CreateEvent/CreateEvent";
@@ -38,6 +40,7 @@ export default function App() {
         <Route path="/create-post" element={<CreatePost /> } />
         <Route path="/create-event" element={<CreateEvent /> } />
         <Route path="/notifications" element={<Notifications /> } />
+        <Route path="/friends" element={<Friends /> } />
       </Routes>
     </Router>
   )
